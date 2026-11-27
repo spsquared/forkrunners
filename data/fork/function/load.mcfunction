@@ -8,6 +8,8 @@ team modify team_blue displayName [{"atlas":"items","sprite":"item/lapis_lazuli"
 team modify team_blue color blue
 team modify team_blue prefix [{"atlas":"items","sprite":"item/lapis_lazuli",color:"white"}, " "]
 
+# scoreboard for game running
+
 tellraw @a "Fork Loaded"
 
 # placing and breaking
