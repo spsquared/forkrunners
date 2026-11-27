@@ -1,3 +1,8 @@
+# countdown
+
+# allow players to organize inventory
+function fork:items/refill_items
+
 # count up
 scoreboard players add #countdown fork_data 1
 
@@ -38,4 +43,4 @@ execute if score #countdown fork_data matches 300 as @a at @s run playsound bloc
 execute if score #countdown fork_data matches 302 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 1
 execute if score #countdown fork_data matches 304 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 1
 execute if score #countdown fork_data matches 304 run title @a clear
-execute if score #countdown fork_data matches 304 run function fork:game/states/to_active
+execute if score #countdown fork_data matches 304 run function fork:game/states/to_2active

@@ -14,4 +14,4 @@ execute if score #ready_message fork_data matches 200 run function fork:game/sta
 execute as @a[scores={fork_ready=1}] at @s run function fork:game/states/0lobby/ready
 
 # if enough people are ready the game starts
-execute if score #ready_players fork_data >= #min_ready_players fork_gamestate if score #ready_players fork_data = #total_players fork_data run function fork:game/states/to_countdown
+execute if score #ready_players fork_data >= #min_ready_players fork_gamestate if score #ready_players fork_data = #total_players fork_data run function fork:game/states/to_1countdown

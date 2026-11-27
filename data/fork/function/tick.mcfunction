@@ -3,8 +3,3 @@ execute if score #state fork_gamestate matches 0 run function fork:game/states/0
 execute if score #state fork_gamestate matches 1 run function fork:game/states/1countdown
 execute if score #state fork_gamestate matches 2 run function fork:game/states/2active
 execute if score #state fork_gamestate matches 3 run function fork:game/states/3end
-
-function fork:items/refill_items
-
-# tame wolf
-execute as @a[scores={used_wolf_egg=1..}] run function fork:events/tame_wolf

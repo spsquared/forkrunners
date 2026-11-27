@@ -1,0 +1,1 @@
+give @s minecraft:shears[can_break={blocks:"#fork:breakable"},unbreakable={},custom_data={fork:true}] 1

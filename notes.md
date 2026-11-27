@@ -13,3 +13,4 @@
 - random items from loot table
   - creeper spawn eggs
   - rewards? limited amount
+- random spread around an armor stand or random armor stand selection?
