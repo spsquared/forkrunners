@@ -6,3 +6,6 @@ function fork:items/check_item {item:"#minecraft:wool",cb:"function fork:items/g
 function fork:items/check_item {item:"minecraft:shears",cb:"function fork:items/give_shears"}
 function fork:items/check_item {item:"minecraft:iron_axe",cb:"function fork:items/give_axe"}
 function fork:items/check_trident
+
+# refill wool to max slots
+execute as @a[tag=fork_player] run function fork:items/wool_start

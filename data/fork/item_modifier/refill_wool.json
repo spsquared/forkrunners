@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:filtered",
+  "item_filter": {
+    "items": "#minecraft:wool",
+    "predicates": {
+      "minecraft:custom_data": { "fork": true }
+    }
+  },
+  "on_pass": {
+    "function": "minecraft:set_count",
+    "count": 64
+  }
+}

@@ -7,11 +7,10 @@ execute if score #missing_stands fork_data matches 1 run tellraw @a {"color":"re
 execute if score #missing_stands fork_data matches 1 run return fail
 
 # setup players
-clear @a
+clear @a[gamemode=!creative,gamemode=!spectator]
 gamemode adventure @a[gamemode=!creative,gamemode=!spectator]
-execute as @a run attribute @s max_health base set 1
-team empty team_red
-team empty team_blue
+team empty fork_red
+team empty fork_blue
 
 # reset scoreboards and go to lobby
 scoreboard players set #state fork_gamestate 0

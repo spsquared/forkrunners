@@ -1,4 +1,4 @@
-$team join team_$(team)
+$team join fork_$(team)
 $tellraw @s [{"bold":true,"color":"$(team)","text":"Joined Team ["},{"atlas":"items","sprite":"item/$(item)"},{"bold":true,"color":"$(team)","text":"] $(name)!"}]
 particle glow ~ ~ ~ 0 2 0 1 20
 # resistance 5 or die
