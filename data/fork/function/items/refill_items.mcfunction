@@ -4,4 +4,5 @@ execute as @e[type=item] if items entity @s contents *[custom_data~{fork:true}] 
 # slightly fragile
 function fork:items/check_item {item:"#minecraft:wool",cb:"function fork:items/give_wool"}
 function fork:items/check_item {item:"minecraft:shears",cb:"function fork:items/give_shears"}
+function fork:items/check_item {item:"minecraft:iron_axe",cb:"function fork:items/give_axe"}
 function fork:items/check_trident

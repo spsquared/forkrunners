@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "fork:events/on_killed"
+    "function": "fork:events/kill_player"
   }
 }
