@@ -19,5 +19,7 @@ team empty team_blue
 scoreboard objectives remove fork_gamestate
 scoreboard objectives add fork_gamestate dummy
 
+scoreboard objectives add used_wolf_egg minecraft.used:minecraft.wolf_spawn_egg
+
 # yay
 tellraw @a "Fork Loaded"
