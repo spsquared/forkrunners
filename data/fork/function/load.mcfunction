@@ -8,10 +8,7 @@ team modify team_blue displayName [{"atlas":"items","sprite":"item/lapis_lazuli"
 team modify team_blue color blue
 team modify team_blue prefix [{"atlas":"items","sprite":"item/lapis_lazuli",color:"white"}, " "]
 
-# scoreboard for game running
+# create scoreboards
 
+# yay
 tellraw @a "Fork Loaded"
-
-# placing and breaking
-give @p minecraft:white_wool[minecraft:can_place_on={}]
-give @p minecraft:shears[can_break={blocks:["minecraft:white_wool"]}] 1
