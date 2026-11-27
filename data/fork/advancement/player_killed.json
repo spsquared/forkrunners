@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "fork:on_killed"
+    "function": "fork:events/on_killed"
   }
 }

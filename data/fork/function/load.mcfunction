@@ -27,5 +27,7 @@ scoreboard objectives add fork_ready trigger
 scoreboard objectives remove fork_data
 scoreboard objectives add fork_data dummy
 
+scoreboard objectives add used_wolf_egg minecraft.used:minecraft.wolf_spawn_egg
+
 # yay
 tellraw @a "Fork Loaded"

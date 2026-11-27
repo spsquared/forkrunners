@@ -8,3 +8,4 @@ execute as @a[team=!] if items entity @s weapon.offhand #minecraft:wool[custom_d
 execute as @a[team=!] if items entity @s player.cursor #minecraft:wool[custom_data~{fork:true}] run tag @s add has_wool
 execute as @a[tag=!has_wool] run function fork:items/give_wool
 execute as @a unless items entity @s container.* minecraft:shears[custom_data~{fork:true}] run give @s minecraft:shears[can_break={blocks:"#fork:breakable"},custom_data={fork:true}] 1
+function fork:items/check_trident
