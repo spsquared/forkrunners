@@ -1,0 +1,3 @@
+# team selection - armor stands
+execute as @a[team=!team_blue] at @s if entity @e[type=armor_stand,tag=fork_blue,distance=..2] run function fork:game/states/0lobby/join {team:"blue",item:"lapis_lazuli",name:"Lapis",color:17663}
+execute as @a[team=!team_red] at @s if entity @e[type=armor_stand,tag=fork_red,distance=..2] run function fork:game/states/0lobby/join {team:"red",item:"redstone",name:"Redstone",color:16711680}

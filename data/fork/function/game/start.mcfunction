@@ -1,7 +1,9 @@
 # game start
 
-execute as @a run clear
-execute as @a run gamemode adventure
-
-# max health
+# setup players
+clear @a
+gamemode adventure @a[gamemode=!creative,gamemode=!spectator]
 execute as @a run attribute @s max_health base set 1
+
+# reset scoreboards
+scoreboard players set #state fork_gamestate 0
