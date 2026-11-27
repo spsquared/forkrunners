@@ -1,0 +1,15 @@
+# gameplay
+- adventure mode
+  - you get a pickaxe/axe that can break certain blocks (glass, doors, leaves)
+  - you get infinite wool of your team color and unbreakable shears to break wool with
+    - wool has a custom_data attribute with the tag so we can tell it apart from non-game wool
+- half a heart mode or ultra-hardcore mode?
+- configurable number of lives
+- infinite beds, but with a long cooldown between placing
+- only one trident per person
+  - tag `has_fork`, give fork if false
+  - if fork in inventory or `execute as @e[type=trident] on origin`
+- bows???????
+- random items from loot table
+  - creeper spawn eggs
+  - rewards? limited amount

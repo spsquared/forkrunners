@@ -1,0 +1,1 @@
+execute if entity @s[team=team_red] giv
