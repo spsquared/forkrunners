@@ -29,18 +29,17 @@ execute if score #countdown fork_data matches 220 run tellraw @a [{"color":"red"
 execute if score #countdown fork_data matches 220 run title @a[team=!] actionbar {"color":"red","text":"4"}
 execute if score #countdown fork_data matches 220 as @a at @s run playsound block.note_block.cow_bell record @s ~ ~ ~ 0.15 1
 execute if score #countdown fork_data matches 240 run tellraw @a [{"color":"red","text":"Countdown: "},{"color":"yellow","text":"3"}]
-execute if score #countdown fork_data matches 240 run title @a[team=!] title {"color":"yellow","shadow_color":-22016,"text":"3"}
+execute if score #countdown fork_data matches 240 run title @a[team=!] title {"color":"yellow","text":"3"}
 execute if score #countdown fork_data matches 240 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 0.5
 execute if score #countdown fork_data matches 260 run tellraw @a [{"color":"red","text":"Countdown: "},{"color":"yellow","text":"2"}]
-execute if score #countdown fork_data matches 260 run title @a[team=!] title {"color":"yellow","shadow_color":-22016,"text":"2"}
+execute if score #countdown fork_data matches 260 run title @a[team=!] title {"color":"yellow","text":"2"}
 execute if score #countdown fork_data matches 260 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 0.5
 execute if score #countdown fork_data matches 280 run tellraw @a [{"color":"red","text":"Countdown: "},{"color":"yellow","text":"1"}]
-execute if score #countdown fork_data matches 280 run title @a[team=!] title {"color":"yellow","shadow_color":-22016,"text":"1"}
+execute if score #countdown fork_data matches 280 run title @a[team=!] title {"color":"yellow","text":"1"}
 execute if score #countdown fork_data matches 280 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 0.5
-execute if score #countdown fork_data matches 300 run tellraw @a [{"color":"red","text":"Countdown: "},{"color":"green","text":"GO!"}]
-execute if score #countdown fork_data matches 300 run title @a[team=!] title {"color":"green","shadow_color":-16733696,"bold":true,"text":"GO!"}
+execute if score #countdown fork_data matches 300 run tellraw @a [{"color":"red","text":"Countdown: "},{"color":"dark_green","text":"GO!"}]
+execute if score #countdown fork_data matches 300 run title @a[team=!] title [{"color":"dark_green","obfuscated":true,"text":"AA"},{"color":"dark_green","bold":true,"obfuscated":false,"text":" GO! "},{"color":"dark_green","bold":false,"obfuscated":true,"text":"AA"}]
 execute if score #countdown fork_data matches 300 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 1
 execute if score #countdown fork_data matches 302 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 1
 execute if score #countdown fork_data matches 304 as @a at @s run playsound block.note_block.bit record @s ~ ~ ~ 2 1
-execute if score #countdown fork_data matches 304 run title @a clear
 execute if score #countdown fork_data matches 304 run function fork:game/states/to_2active
