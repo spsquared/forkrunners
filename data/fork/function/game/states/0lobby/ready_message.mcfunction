@@ -1,0 +1,4 @@
+scoreboard players set #ready_message fork_data 0
+execute as @a[team=team_red] unless score @s fork_ready matches 2 run scoreboard players enable @s fork_ready
+execute as @a[team=team_blue] unless score @s fork_ready matches 2 run scoreboard players enable @s fork_ready
+execute as @a unless score @s fork_ready matches 1 run tellraw @s [{"color":"green","score":{"name":"#ready_players","objective":"fork_data"}},{"color":"green","text":"/"},{"color":"green","score":{"name":"#total_players","objective":"fork_data"}}," are ready. Click ",{"bold":true,"click_event":{"action":"run_command","command":"trigger fork_ready"},"color":"gold","text":"[READY]"},{"color":"green","text":" to start the game!"}]

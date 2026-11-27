@@ -18,6 +18,14 @@ team empty team_blue
 # integer game state
 scoreboard objectives remove fork_gamestate
 scoreboard objectives add fork_gamestate dummy
+# minimum number of players
+scoreboard players set #min_ready_players fork_gamestate 1
+# readiness
+scoreboard objectives remove fork_ready
+scoreboard objectives add fork_ready trigger
+# generic board
+scoreboard objectives remove fork_data
+scoreboard objectives add fork_data dummy
 
 # yay
 tellraw @a "Fork Loaded"
