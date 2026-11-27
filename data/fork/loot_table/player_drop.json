@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:creeper_spawn_egg", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:warden_spawn_egg", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:wolf_spawn_egg", "weight": 2 },
+        { "type": "minecraft:item", "name": "minecraft:wither_spawn_egg", "weight": 1 },
+        { "type": "minecraft:item", "name": "minecraft:ender_dragon_spawn_egg", "weight": 1 }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:custom_data": {
+              "fork": true
+            },
+            "minecraft:can_place_on": {}
+          }
+        }
+      ]
+    }
+  ]
+}
